@@ -103,15 +103,15 @@
     }
   }
   &__btn {
+    display: block;
+    width: max-content;
     margin-top: 24px;
     padding: 12px 24px 15px;
     font-size: 1.2em;
     line-height: 1.4em;
     color: #fff;
     background-color: #505E6A;
-    mask-image: paint(smooth-corners);
-    -webkit-mask-image: paint(smooth-corners);
-    --smooth-corners: 11;
+    border-radius: 8px;
     @include r(1600) {
       padding-left: 10px;
       padding-right: 10px;
@@ -120,6 +120,9 @@
     @include r(650) {
       mask-image: none;
       border-radius: 8px;
+    }
+    &:hover {
+      color: #fff;
     }
   }
   &_mobile {

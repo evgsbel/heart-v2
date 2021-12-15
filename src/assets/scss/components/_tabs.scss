@@ -48,11 +48,13 @@
     align-items: center;
     gap: 24px;
     @include r(1400) {
-      flex-direction:column;
+      flex-direction: column;
       align-items: flex-start;
     }
   }
   &__link {
+    display: block;
+    width: max-content;
     padding: 16px 40px 20px;
     font-weight: 500;
     font-size: 1.25em;
@@ -62,6 +64,9 @@
     border-radius: 12px;
     &_white {
       color: #fff;
+      &:hover {
+        color: #fff;
+      }
     }
   }
   &__stat {
@@ -99,18 +104,16 @@
         }
       }
       &[data-target="one"] {
-        & {
-          button {
-            margin-top: 2em;
-            background-color: #2688E5;
-          }
-          &::after {
-            background-image: url(../img/hero-decor-01.png);
-          }
+        .hero-tabs__link {
+          margin-top: 2em;
+          background-color: #2688E5;
+        }
+        &::after {
+          background-image: url(../img/hero-decor-01.png);
         }
       }
       &[data-target="two"] {
-        button {
+        .hero-tabs__link {
           background-color: #3FD72B;
         }
         .hero-tabs__stat {
@@ -121,7 +124,7 @@
         }
       }
       &[data-target="three"] {
-        button {
+        .hero-tabs__link {
           background-color: #D5833C;
         }
         .hero-tabs__stat {
@@ -132,7 +135,7 @@
         }
       }
       &[data-target="four"] {
-        button {
+        .hero-tabs__link {
           background-color: #38CCEE;
         }
         .hero-tabs__stat {
@@ -143,7 +146,7 @@
         }
       }
       &[data-target="five"] {
-        button {
+        .hero-tabs__link {
           margin-top: 2em;
           background-color: #44F2E1;
         }
@@ -152,7 +155,7 @@
         }
       }
       &[data-target="six"] {
-        button {
+        .hero-tabs__link {
           margin-top: 2em;
           background-color: #B365F5;
         }
@@ -161,7 +164,7 @@
         }
       }
       &[data-target="seven"] {
-        button {
+        .hero-tabs__link {
           background-color: #75BBFC;
         }
         .hero-tabs__stat {
@@ -172,7 +175,7 @@
         }
       }
       &[data-target="eight"] {
-        button {
+        .hero-tabs__link {
           background-color: #FCE51A;
         }
         .hero-tabs__stat {
@@ -183,7 +186,7 @@
         }
       }
       &[data-target="nine"] {
-        button {
+        .hero-tabs__link {
           background-color: #E8F85D;
         }
         .hero-tabs__stat {
@@ -195,7 +198,7 @@
         }
       }
       &[data-target="ten"] {
-        button {
+        .hero-tabs__link {
           background-color: #5EE8F8;
         }
         .hero-tabs__stat {
@@ -206,18 +209,18 @@
         }
       }
       &[data-target="eleven"] {
-        button {
+        .hero-tabs__link {
           background-color: #A2E550;
         }
         .hero-tabs__stat {
           background-color: rgba(233, 255, 211, 0.5);
         }
-      &::after {
+        &::after {
           background-image: url(../img/hero-decor-011.png);
         }
       }
       &[data-target="twelve"] {
-        button {
+        .hero-tabs__link {
           margin-top: 2em;
           background-color: #3777E0;
         }

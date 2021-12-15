@@ -15481,15 +15481,17 @@ h3 {
 
 /* line 105, src/assets/scss/layout/_footer.scss */
 .footer__btn {
+  display: block;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
   margin-top: 24px;
   padding: 12px 24px 15px;
   font-size: 1.2em;
   line-height: 1.4em;
   color: #fff;
   background-color: #505E6A;
-  mask-image: paint(smooth-corners);
-  -webkit-mask-image: paint(smooth-corners);
-  --smooth-corners: 11;
+  border-radius: 8px;
 }
 
 @media only screen and (max-width: 1600px) {
@@ -15510,36 +15512,41 @@ h3 {
   }
 }
 
-/* line 125, src/assets/scss/layout/_footer.scss */
+/* line 124, src/assets/scss/layout/_footer.scss */
+.footer__btn:hover {
+  color: #fff;
+}
+
+/* line 128, src/assets/scss/layout/_footer.scss */
 .footer_mobile {
   display: none;
 }
 
 @media only screen and (max-width: 1200px) {
-  /* line 125, src/assets/scss/layout/_footer.scss */
+  /* line 128, src/assets/scss/layout/_footer.scss */
   .footer_mobile {
     display: block;
   }
 }
 
 @media only screen and (max-width: 1200px) {
-  /* line 131, src/assets/scss/layout/_footer.scss */
+  /* line 134, src/assets/scss/layout/_footer.scss */
   .footer_desktop {
     display: none;
   }
 }
 
-/* line 138, src/assets/scss/layout/_footer.scss */
+/* line 141, src/assets/scss/layout/_footer.scss */
 .footer-nav__item {
   margin-bottom: 1em;
 }
 
-/* line 140, src/assets/scss/layout/_footer.scss */
+/* line 143, src/assets/scss/layout/_footer.scss */
 .footer-nav__item:last-of-type {
   margin-bottom: 0;
 }
 
-/* line 144, src/assets/scss/layout/_footer.scss */
+/* line 147, src/assets/scss/layout/_footer.scss */
 .footer-nav__link {
   font-weight: 500;
   font-size: 1.5em;
@@ -15548,26 +15555,26 @@ h3 {
 }
 
 @media only screen and (max-width: 1440px) {
-  /* line 144, src/assets/scss/layout/_footer.scss */
+  /* line 147, src/assets/scss/layout/_footer.scss */
   .footer-nav__link {
     font-size: 1.25em;
   }
 }
 
 @media only screen and (max-width: 480px) {
-  /* line 144, src/assets/scss/layout/_footer.scss */
+  /* line 147, src/assets/scss/layout/_footer.scss */
   .footer-nav__link {
     font-size: 16px;
   }
 }
 
-/* line 155, src/assets/scss/layout/_footer.scss */
+/* line 158, src/assets/scss/layout/_footer.scss */
 .footer-nav__link:hover {
   color: #fff;
 }
 
 @media only screen and (max-width: 600px) {
-  /* line 161, src/assets/scss/layout/_footer.scss */
+  /* line 164, src/assets/scss/layout/_footer.scss */
   .footer-contacts {
     width: 100%;
     margin: 30px 0 0;
@@ -15575,19 +15582,19 @@ h3 {
 }
 
 @media only screen and (max-width: 480px) {
-  /* line 168, src/assets/scss/layout/_footer.scss */
+  /* line 171, src/assets/scss/layout/_footer.scss */
   .desktop-only {
     display: none;
   }
 }
 
-/* line 174, src/assets/scss/layout/_footer.scss */
+/* line 177, src/assets/scss/layout/_footer.scss */
 .mobile-only {
   display: none;
 }
 
 @media only screen and (max-width: 480px) {
-  /* line 174, src/assets/scss/layout/_footer.scss */
+  /* line 177, src/assets/scss/layout/_footer.scss */
   .mobile-only {
     display: block;
   }
@@ -15842,6 +15849,10 @@ h3 {
 
 /* line 55, src/assets/scss/components/_tabs.scss */
 .hero-tabs__link {
+  display: block;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
   padding: 16px 40px 20px;
   font-weight: 500;
   font-size: 1.25em;
@@ -15849,12 +15860,17 @@ h3 {
   border-radius: 12px;
 }
 
-/* line 63, src/assets/scss/components/_tabs.scss */
+/* line 65, src/assets/scss/components/_tabs.scss */
 .hero-tabs__link_white {
   color: #fff;
 }
 
 /* line 67, src/assets/scss/components/_tabs.scss */
+.hero-tabs__link_white:hover {
+  color: #fff;
+}
+
+/* line 72, src/assets/scss/components/_tabs.scss */
 .hero-tabs__stat {
   padding: 18px 24px 21px;
   font-weight: 600;
@@ -15864,17 +15880,17 @@ h3 {
   border-radius: 16px;
 }
 
-/* line 74, src/assets/scss/components/_tabs.scss */
+/* line 79, src/assets/scss/components/_tabs.scss */
 .hero-tabs__stat span {
   font-weight: 400;
 }
 
-/* line 78, src/assets/scss/components/_tabs.scss */
+/* line 83, src/assets/scss/components/_tabs.scss */
 .hero-tabs__content {
   display: none;
 }
 
-/* line 81, src/assets/scss/components/_tabs.scss */
+/* line 86, src/assets/scss/components/_tabs.scss */
 .hero-tabs__content::after {
   content: '';
   position: absolute;
@@ -15889,7 +15905,7 @@ h3 {
 }
 
 @media only screen and (max-width: 1440px) {
-  /* line 81, src/assets/scss/components/_tabs.scss */
+  /* line 86, src/assets/scss/components/_tabs.scss */
   .hero-tabs__content::after {
     width: 550px;
     height: 550px;
@@ -15897,193 +15913,193 @@ h3 {
 }
 
 @media only screen and (max-width: 768px) {
-  /* line 81, src/assets/scss/components/_tabs.scss */
+  /* line 86, src/assets/scss/components/_tabs.scss */
   .hero-tabs__content::after {
     width: 450px;
     height: 450px;
   }
 }
 
-/* line 103, src/assets/scss/components/_tabs.scss */
-.hero-tabs__content[data-target="one"] button {
+/* line 107, src/assets/scss/components/_tabs.scss */
+.hero-tabs__content[data-target="one"] .hero-tabs__link {
   margin-top: 2em;
   background-color: #2688E5;
 }
 
-/* line 107, src/assets/scss/components/_tabs.scss */
+/* line 111, src/assets/scss/components/_tabs.scss */
 .hero-tabs__content[data-target="one"]::after {
   background-image: url(../img/hero-decor-01.png);
 }
 
-/* line 113, src/assets/scss/components/_tabs.scss */
-.hero-tabs__content[data-target="two"] button {
+/* line 116, src/assets/scss/components/_tabs.scss */
+.hero-tabs__content[data-target="two"] .hero-tabs__link {
   background-color: #3FD72B;
 }
 
-/* line 116, src/assets/scss/components/_tabs.scss */
+/* line 119, src/assets/scss/components/_tabs.scss */
 .hero-tabs__content[data-target="two"] .hero-tabs__stat {
   background-color: rgba(216, 255, 211, 0.5);
 }
 
-/* line 119, src/assets/scss/components/_tabs.scss */
+/* line 122, src/assets/scss/components/_tabs.scss */
 .hero-tabs__content[data-target="two"]::after {
   background-image: url(../img/hero-decor-02.png);
 }
 
-/* line 124, src/assets/scss/components/_tabs.scss */
-.hero-tabs__content[data-target="three"] button {
+/* line 127, src/assets/scss/components/_tabs.scss */
+.hero-tabs__content[data-target="three"] .hero-tabs__link {
   background-color: #D5833C;
 }
 
-/* line 127, src/assets/scss/components/_tabs.scss */
+/* line 130, src/assets/scss/components/_tabs.scss */
 .hero-tabs__content[data-target="three"] .hero-tabs__stat {
   background-color: rgba(255, 235, 211, 0.5);
 }
 
-/* line 130, src/assets/scss/components/_tabs.scss */
+/* line 133, src/assets/scss/components/_tabs.scss */
 .hero-tabs__content[data-target="three"]::after {
   background-image: url(../img/hero-decor-03.png);
 }
 
-/* line 135, src/assets/scss/components/_tabs.scss */
-.hero-tabs__content[data-target="four"] button {
+/* line 138, src/assets/scss/components/_tabs.scss */
+.hero-tabs__content[data-target="four"] .hero-tabs__link {
   background-color: #38CCEE;
 }
 
-/* line 138, src/assets/scss/components/_tabs.scss */
+/* line 141, src/assets/scss/components/_tabs.scss */
 .hero-tabs__content[data-target="four"] .hero-tabs__stat {
   background-color: rgba(197, 243, 254, 0.5);
 }
 
-/* line 141, src/assets/scss/components/_tabs.scss */
+/* line 144, src/assets/scss/components/_tabs.scss */
 .hero-tabs__content[data-target="four"]::after {
   background-image: url(../img/hero-decor-04.png);
 }
 
-/* line 146, src/assets/scss/components/_tabs.scss */
-.hero-tabs__content[data-target="five"] button {
+/* line 149, src/assets/scss/components/_tabs.scss */
+.hero-tabs__content[data-target="five"] .hero-tabs__link {
   margin-top: 2em;
   background-color: #44F2E1;
 }
 
-/* line 150, src/assets/scss/components/_tabs.scss */
+/* line 153, src/assets/scss/components/_tabs.scss */
 .hero-tabs__content[data-target="five"]::after {
   background-image: url(../img/hero-decor-05.png);
 }
 
-/* line 155, src/assets/scss/components/_tabs.scss */
-.hero-tabs__content[data-target="six"] button {
+/* line 158, src/assets/scss/components/_tabs.scss */
+.hero-tabs__content[data-target="six"] .hero-tabs__link {
   margin-top: 2em;
   background-color: #B365F5;
 }
 
-/* line 159, src/assets/scss/components/_tabs.scss */
+/* line 162, src/assets/scss/components/_tabs.scss */
 .hero-tabs__content[data-target="six"]::after {
   background-image: url(../img/hero-decor-06.png);
 }
 
-/* line 164, src/assets/scss/components/_tabs.scss */
-.hero-tabs__content[data-target="seven"] button {
+/* line 167, src/assets/scss/components/_tabs.scss */
+.hero-tabs__content[data-target="seven"] .hero-tabs__link {
   background-color: #75BBFC;
 }
 
-/* line 167, src/assets/scss/components/_tabs.scss */
+/* line 170, src/assets/scss/components/_tabs.scss */
 .hero-tabs__content[data-target="seven"] .hero-tabs__stat {
   background-color: rgba(211, 237, 255, 0.5);
 }
 
-/* line 170, src/assets/scss/components/_tabs.scss */
+/* line 173, src/assets/scss/components/_tabs.scss */
 .hero-tabs__content[data-target="seven"]::after {
   background-image: url(../img/hero-decor-07.png);
 }
 
-/* line 175, src/assets/scss/components/_tabs.scss */
-.hero-tabs__content[data-target="eight"] button {
+/* line 178, src/assets/scss/components/_tabs.scss */
+.hero-tabs__content[data-target="eight"] .hero-tabs__link {
   background-color: #FCE51A;
 }
 
-/* line 178, src/assets/scss/components/_tabs.scss */
+/* line 181, src/assets/scss/components/_tabs.scss */
 .hero-tabs__content[data-target="eight"] .hero-tabs__stat {
   background-color: rgba(255, 245, 157, 0.5);
 }
 
-/* line 181, src/assets/scss/components/_tabs.scss */
+/* line 184, src/assets/scss/components/_tabs.scss */
 .hero-tabs__content[data-target="eight"]::after {
   background-image: url(../img/hero-decor-08.png);
 }
 
-/* line 186, src/assets/scss/components/_tabs.scss */
-.hero-tabs__content[data-target="nine"] button {
+/* line 189, src/assets/scss/components/_tabs.scss */
+.hero-tabs__content[data-target="nine"] .hero-tabs__link {
   background-color: #E8F85D;
 }
 
-/* line 189, src/assets/scss/components/_tabs.scss */
+/* line 192, src/assets/scss/components/_tabs.scss */
 .hero-tabs__content[data-target="nine"] .hero-tabs__stat {
   background-color: rgba(247, 255, 157, 0.5);
 }
 
-/* line 193, src/assets/scss/components/_tabs.scss */
+/* line 196, src/assets/scss/components/_tabs.scss */
 .hero-tabs__content[data-target="nine"]::after {
   background-image: url(../img/hero-decor-09.png);
 }
 
-/* line 198, src/assets/scss/components/_tabs.scss */
-.hero-tabs__content[data-target="ten"] button {
+/* line 201, src/assets/scss/components/_tabs.scss */
+.hero-tabs__content[data-target="ten"] .hero-tabs__link {
   background-color: #5EE8F8;
 }
 
-/* line 201, src/assets/scss/components/_tabs.scss */
+/* line 204, src/assets/scss/components/_tabs.scss */
 .hero-tabs__content[data-target="ten"] .hero-tabs__stat {
   background-color: rgba(211, 250, 255, 0.5);
 }
 
-/* line 204, src/assets/scss/components/_tabs.scss */
+/* line 207, src/assets/scss/components/_tabs.scss */
 .hero-tabs__content[data-target="ten"]::after {
   background-image: url(../img/hero-decor-010.png);
 }
 
-/* line 209, src/assets/scss/components/_tabs.scss */
-.hero-tabs__content[data-target="eleven"] button {
+/* line 212, src/assets/scss/components/_tabs.scss */
+.hero-tabs__content[data-target="eleven"] .hero-tabs__link {
   background-color: #A2E550;
 }
 
-/* line 212, src/assets/scss/components/_tabs.scss */
+/* line 215, src/assets/scss/components/_tabs.scss */
 .hero-tabs__content[data-target="eleven"] .hero-tabs__stat {
   background-color: rgba(233, 255, 211, 0.5);
 }
 
-/* line 215, src/assets/scss/components/_tabs.scss */
+/* line 218, src/assets/scss/components/_tabs.scss */
 .hero-tabs__content[data-target="eleven"]::after {
   background-image: url(../img/hero-decor-011.png);
 }
 
-/* line 220, src/assets/scss/components/_tabs.scss */
-.hero-tabs__content[data-target="twelve"] button {
+/* line 223, src/assets/scss/components/_tabs.scss */
+.hero-tabs__content[data-target="twelve"] .hero-tabs__link {
   margin-top: 2em;
   background-color: #3777E0;
 }
 
-/* line 224, src/assets/scss/components/_tabs.scss */
+/* line 227, src/assets/scss/components/_tabs.scss */
 .hero-tabs__content[data-target="twelve"]::after {
   background-image: url(../img/hero-decor-012.png);
 }
 
-/* line 228, src/assets/scss/components/_tabs.scss */
+/* line 231, src/assets/scss/components/_tabs.scss */
 .hero-tabs__content.is-active {
   display: block;
 }
 
-/* line 236, src/assets/scss/components/_tabs.scss */
+/* line 239, src/assets/scss/components/_tabs.scss */
 .tabs__content {
   display: none;
 }
 
-/* line 238, src/assets/scss/components/_tabs.scss */
+/* line 241, src/assets/scss/components/_tabs.scss */
 .tabs__content.is-active {
   display: block;
 }
 
-/* line 241, src/assets/scss/components/_tabs.scss */
+/* line 244, src/assets/scss/components/_tabs.scss */
 .tabs__content_flex.is-active {
   display: -webkit-box;
   display: -ms-flexbox;
