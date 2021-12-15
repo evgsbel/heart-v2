@@ -1,0 +1,13 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the button component.
+// -----------------------------------------------------------------------------
+.button {
+  border-radius: 8px;
+  &_white {
+    background-color: #fff;
+  }
+  &_blue {
+    color: #fff;
+    background-color: #2688E5;
+  }
+}

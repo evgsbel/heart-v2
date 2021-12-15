@@ -1,0 +1,100 @@
+// -----------------------------------------------------------------------------
+// This file contains very basic styles.
+// -----------------------------------------------------------------------------
+
+/**
+ * Set up a decent box model on the root element
+ */
+html {
+  box-sizing: border-box;
+}
+
+html,
+body,
+main {
+  margin: 0;
+}
+
+body {
+  background-color: #fff;
+  &.opened-menu {
+    overflow: hidden;
+  }
+  @include r(600) {
+    padding-top: 0 !important;
+  }
+}
+
+.container {
+  padding: 0 56px;
+  @include r(768) {
+    padding: 0 32px;
+  }
+  @include r(480) {
+    padding: 0 12px;
+  }
+}
+.row {
+  @include r(480) {
+    margin-left: -12px;
+    margin-right: -12px;
+  }
+}
+
+
+
+/**
+ * Make all elements from the DOM inherit from the parent box-sizing
+ * Since `*` has a specificity of 0, it does not override the `html` value
+ * making all elements inheriting from the root box-sizing value
+ * See: https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+ */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  &:hover {
+    text-decoration: none;
+    color: inherit;
+  }
+}
+
+img {
+  max-width: 100%;
+}
+
+.btn-reset {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 0;
+}
+
+.is-inner-page {
+  .header {
+    background-color: #fff;
+    &_fixed {
+      @include r(600) {
+        background-color: transparent;
+      }
+    }
+  }
+  .burger {
+    color: #000;
+  }
+  .logo__img,
+  .logo__text {
+    fill: #13264A;
+    color: #13264A;
+    opacity: 0.45;
+  }
+}
+
+
+
+

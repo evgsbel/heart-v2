@@ -1,0 +1,180 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the footer of the site/application.
+// -----------------------------------------------------------------------------
+.footer {
+  margin-top: 40px;
+  padding-top: 54px;
+  padding-bottom: 64px;
+  background-color: #3D4C5A;
+  border-radius: 16px 16px 0px 0px;
+  @include r(480) {
+    padding-bottom: 32px;
+  }
+  &__social {
+    margin-top: 40px;
+  }
+  &__copy {
+    margin-top: 48px;
+    color: #CDCDCD;
+    @include r(1440) {
+      margin-top: 35px;
+    }
+    @include r(1200) {
+      text-align: right;
+    }
+    @include r(768) {
+      text-align: center;
+    }
+    @include r(480) {
+      margin: 0;
+    }
+  }
+  &__caption {
+    margin-top: 24px;
+    color: #CDCDCD;
+    font-size: 1.25em;
+    line-height: 1.4em;
+    @include r(1600) {
+      font-size: 1.1125em;
+    }
+    @include r(1440) {
+      font-size: 1em;
+    }
+  }
+  &__email {
+    color: #fff;
+    font-size: 1.2em;
+    line-height: 1.4em;
+    @include r(480) {
+      font-size: 12px;
+    }
+    &:hover {
+      color: #fff;
+    }
+  }
+  &__phone {
+    position: relative;
+    display: block;
+    margin-bottom: 16px;
+    font-weight: 500;
+    font-size: 1.5em;
+    line-height: 1.4em;
+    width: max-content;
+    color: #fff;
+    @include r(1440) {
+      font-size: 1.25em;
+    }
+    @include r(480) {
+      font-size: 18px;
+    }
+    span {
+      font-weight: 400;
+      font-size: 0.8em;
+      line-height: 1.4em;
+      opacity: 0.6;
+      @include r(480) {
+        font-size: 14px;
+      }
+    }
+    i {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      display: block;
+      width: 17px;
+      height: 17px;
+      background-image: url("data:image/svg+xml,%3Csvg width='17' height='17' viewBox='0 0 17 17' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10.8363 8.5L17 11.7873L15.8567 13.7597L9.64327 10.3315V17H7.35672L7.40643 10.3315L1.19298 13.7597L0 11.7873L6.21345 8.5L0 5.21271L1.19298 3.19337L7.40643 6.66851L7.35672 0H9.64327V6.66851L15.8567 3.19337L17 5.21271L10.8363 8.5Z' fill='white'/%3E%3C/svg%3E%0A");
+      background-repeat: no-repeat;
+      transform: translateY(-50%);
+      @include r(480) {
+        top: 48%;
+        width: 15px;
+        height: 15px;
+        background-size: cover;
+      }
+    }
+
+    &:hover {
+      color: #fff;
+    }
+    &_pl {
+      padding-left: 19px;
+      margin-bottom: 0;
+    }
+  }
+  &__btn {
+    margin-top: 24px;
+    padding: 12px 24px 15px;
+    font-size: 1.2em;
+    line-height: 1.4em;
+    color: #fff;
+    background-color: #505E6A;
+    mask-image: paint(smooth-corners);
+    -webkit-mask-image: paint(smooth-corners);
+    --smooth-corners: 11;
+    @include r(1600) {
+      padding-left: 10px;
+      padding-right: 10px;
+      width: 100%;
+    }
+    @include r(650) {
+      mask-image: none;
+      border-radius: 8px;
+    }
+  }
+  &_mobile {
+    display: none;
+    @include r(1200) {
+      display: block;
+    }
+  }
+  &_desktop {
+    @include r(1200) {
+      display: none;
+    }
+  }
+}
+.footer-nav {
+  &__item {
+    margin-bottom: 1em;
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+  &__link {
+    font-weight: 500;
+    font-size: 1.5em;
+    line-height: 1.4em;
+    color: #fff;
+    @include r(1440) {
+      font-size: 1.25em;
+    }
+    @include r(480) {
+      font-size: 16px;
+    }
+    &:hover {
+      color: #fff;
+    }
+  }
+}
+
+.footer-contacts {
+  @include r(600) {
+    width: 100%;
+    margin: 30px 0 0;
+  }
+}
+
+.desktop-only {
+  @include r(480) {
+    display: none;
+  }
+}
+
+.mobile-only {
+  display: none;
+  @include r(480) {
+    display: block;
+  }
+}
+
