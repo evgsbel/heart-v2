@@ -1407,7 +1407,7 @@
     padding: 50px 0;
     height: 560px;
     background: linear-gradient(0deg, #FFFFFF, #FFFFFF), #F7FAFD;
-    box-shadow: 2px 4px 90px rgba(17, 134, 244, 0.11);
+    box-shadow: 2px 4px 90px 0px rgba(17, 134, 244, 0.11);
     overflow: hidden;
     border-radius: 48px;
 
@@ -1420,7 +1420,7 @@
     @include r(650) {
       order: -1;
       margin-left: 0;
-      box-shadow: 1.42857px 2.85714px 64.2857px rgba(17, 134, 244, 0.11);
+      box-shadow: 1.42857px 2.85714px 64.2857px 0px rgba(17, 134, 244, 0.11);
       height: 320px;
     }
   }
@@ -1517,7 +1517,7 @@
     }
   }
 }
-@include r(375) {
+@include r(320) {
   @keyframes auto-scroll {
     from {
       transform: translate3d(0, 0, 0);

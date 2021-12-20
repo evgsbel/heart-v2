@@ -18932,8 +18932,8 @@ h3 {
   height: 560px;
   background: -webkit-gradient(linear, left bottom, left top, from(#FFFFFF), to(#FFFFFF)), #F7FAFD;
   background: linear-gradient(0deg, #FFFFFF, #FFFFFF), #F7FAFD;
-  -webkit-box-shadow: 2px 4px 90px rgba(17, 134, 244, 0.11);
-          box-shadow: 2px 4px 90px rgba(17, 134, 244, 0.11);
+  -webkit-box-shadow: 2px 4px 90px 0px rgba(17, 134, 244, 0.11);
+          box-shadow: 2px 4px 90px 0px rgba(17, 134, 244, 0.11);
   overflow: hidden;
   border-radius: 48px;
 }
@@ -18959,8 +18959,8 @@ h3 {
         -ms-flex-order: -1;
             order: -1;
     margin-left: 0;
-    -webkit-box-shadow: 1.42857px 2.85714px 64.2857px rgba(17, 134, 244, 0.11);
-            box-shadow: 1.42857px 2.85714px 64.2857px rgba(17, 134, 244, 0.11);
+    -webkit-box-shadow: 1.42857px 2.85714px 64.2857px 0px rgba(17, 134, 244, 0.11);
+            box-shadow: 1.42857px 2.85714px 64.2857px 0px rgba(17, 134, 244, 0.11);
     height: 320px;
   }
 }
@@ -19136,7 +19136,7 @@ h3 {
   }
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 320px) {
   @-webkit-keyframes auto-scroll {
     from {
       -webkit-transform: translate3d(0, 0, 0);
