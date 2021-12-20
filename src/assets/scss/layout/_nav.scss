@@ -65,7 +65,7 @@
   position: fixed;
   top: 0;
   left: -102%;
-  z-index: 100;
+  z-index: 500;
   display: none;
   padding: 30px 56px;
   background-color: #fff;
@@ -108,14 +108,10 @@
     opacity: 0.45;
   }
   &__btns {
-    position: absolute;
-    bottom: 60px;
-    left: 0;
-    right: 0;
     display: flex;
     justify-content: center;
     gap: 0 10px;
-    margin: 0 auto;
+    margin: 15px auto 0;
     @include r(375) {
       flex-wrap: wrap;
       bottom: 15%;
@@ -123,14 +119,14 @@
   }
   &__btn {
     padding: 16px 24px 20px;
-    width: 45%;
+    width: 48%;
     background-color: #EFF7FF;
     border-radius: 12px;
     color: #127CE1;
     font-size: 1.2em;
     line-height: 1.4em;
     @include r(375) {
-      width: calc(100% - 24px);
+      width: 100%;
       margin-bottom: 10px;
       --smooth-corners: 15;
     }

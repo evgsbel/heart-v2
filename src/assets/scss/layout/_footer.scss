@@ -118,7 +118,7 @@
       width: 100%;
     }
     @include r(650) {
-      mask-image: none;
+      text-align: center;
       border-radius: 8px;
     }
     &:hover {

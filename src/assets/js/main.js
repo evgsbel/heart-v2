@@ -89,9 +89,9 @@ const swiperHelp = new Swiper('.help__swiper', {
       slidesPerView: 1.2,
       spaceBetween: 16,
     },
-    1440: {
-      spaceBetween: 10,
-      slidesPerView: 1.03,
+    1400: {
+      spaceBetween: 56,
+      slidesPerView: 1,
     },
     1600: {
       slidesPerView: 1.5,
@@ -174,7 +174,7 @@ $(() => {
             spaceBetween: 16
           },
           1199: {
-            slidesPerView: 1,
+            slidesPerView: 1.2,
             spaceBetween: 16
           },
           1240: {

@@ -46,6 +46,7 @@
     margin-top: 2em;
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     gap: 24px;
     @include r(1400) {
       flex-direction: column;
@@ -69,8 +70,15 @@
       }
     }
   }
+  &__dop-link {
+    padding-left: 30px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.4;
+    color: #2688E5;
+  }
   &__stat {
-    padding: 18px 24px 21px;
+    padding: 21px 24px 23px;
     font-weight: 600;
     color: #051e23;
     font-size: 1.125em;
